@@ -1,0 +1,88 @@
+:root{
+    --red-color:#F39595;
+    --gray-color:#F5F2F2;
+    --blue-color:#2F2E41;
+}
+.signup-container {
+    padding: 0;
+    width: 400px;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form{
+    font-family: 'Questrial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 5%;
+    margin: auto;
+    height: 400px;
+}
+.signup-form h3{
+    margin: auto;
+    color: var(--blue-color);
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+.signup-form input[type=text], .signup-form input[type=password], .signup-form input[type=email]{
+    font-family: 'Questrial', sans-serif;
+    color: var(--blue-color);
+    margin: 9px;
+    border-radius: 8px ;
+    padding: 9px;
+    border: solid #e4e4e4 0.5px;
+    padding-left: 6px;
+    font-size: 1rem;
+}   
+.signup-form input[type=text]:focus, .signup-form input[type=password]:focus, .signup-form input[type=email]:focus{
+    outline: none;
+    border-color: var(--red-color);
+}
+.signup-form ::placeholder {
+    padding-left: 6px;
+    font-family: 'Questrial', sans-serif;
+    color: #c4c3c3;
+  }
+
+.signup-form .agree{
+    margin: 12px;
+    position: relative;
+}
+
+.signup-form .agree label{
+    position: absolute;
+    top:3px;
+    font-size: 0.9rem;
+    margin: 0;
+    
+}
+
+.signup-form p{
+    color: var(--red-color);
+    text-align: center;
+}
+
+
+.signup-form input[type=submit]{
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 0 10px 0;
+    background-color: var(--red-color);
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    .signup-container{
+        box-shadow: none;
+    }
+}
